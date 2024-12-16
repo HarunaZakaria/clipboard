@@ -12,11 +12,9 @@ body{
     text-align: center;
 }
 h1, h2, h3{
-    opacity: 80%;
     color: hsl(210, 10%, 33%);
 }
 p{
-    width: 80%;
     text-align: center;
     margin: 0 auto;
     line-height: 1.5;
@@ -43,45 +41,48 @@ p{
 }
 footer{
     background-color: hsl(197, 20%, 93%);
-    max-width: 100%;
+    
 }
 /* this is the Desktop device style */
 
 @media(min-width: 376px) {
-    
-    .header img{
-        width: 60px;
-    }
-    .container{
+    .header{
+        margin-top: 0;
+        background-image: url(images/bg-header-desktop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         width: 100%;
     }
+    .header img{
+        margin-top: 100px;
+        width: 60px;
+    }
+    
     .ios-btn, .mac-btn{
         padding: 10px 15px;
-        margin: 10px;
+        margin: 40px;
         border-radius: 20px;
     }
     .track-snippets, .multi-device{
         padding: 50px 0;
     }
     .track-snippets p .multi-device p, .clipboard-store p{
-        width: 600px;
         text-align: center;
     }
     .comp-cate {
-        width: 600PX;
+        padding: 0 100px;
+        justify-content: space-between;
         display: flex;
-        gap: 80px;
         margin: 0 auto 100px auto;
     }
     .comp-cate img{
-        width: 400px;
-        max-height: 350px;
+        width: 450px;
     }
     .category{
         text-align: left;
     }
     .category p{
-        width: 300px;
         text-align: left;
         margin: 0;
     }
@@ -91,6 +92,7 @@ footer{
     }
     .Supercharge, .sponsors{
         display: flex;
+        gap: 40px;
         justify-content: space-around;
         padding: 50px 0 100px 0;
         width: 600px;
@@ -101,12 +103,12 @@ footer{
         display: flex;
         justify-content: space-evenly;
         padding: 30px;
-
+    
     }
     .footer-menu{
         text-align: center;
         display: flex;
-
+    
     }
     .footer-menu p{
         margin: 0 15px;
@@ -118,6 +120,9 @@ footer{
     }
     .social img{
         width: 30px;
+    }
+    .attribution{
+        padding-bottom: 20px;
     }
 }
 
